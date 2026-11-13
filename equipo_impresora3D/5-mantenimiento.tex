@@ -1,0 +1,91 @@
+\chapter{Mantenimiento y Solución de Problemas}
+
+\section{Antes de cada impresión}
+
+\begin{itemize}
+    \item La cama está libre de objetos y nada impide que el cabezal se mueva por el área de impresión.
+    \item No hay objetos debajo de la cama que impidan su movimiento vertical.
+    \item No quedan trozos de filamento roto dentro del extrusor.
+    \item Los cables están ordenados y recogidos.
+    \item El software está actualizado (la impresora avisa en pantalla, pero solo si está conectada a Wi-Fi).
+\end{itemize}
+
+\section{Mantenimiento periódico (cada 6 a 12 meses según uso)}
+
+\subsection{Limpiar el engranaje alimentador}
+
+\begin{enumerate}
+    \item Apague la impresora y retire la tapa del extrusor.
+    \item Cepille el engranaje con un cepillo de dientes para quitar residuos.
+    \item Gire el eje del motor a mano y repita hasta limpiar todo el engranaje.
+    \item Coloque de nuevo la tapa y conecte la impresora.
+\end{enumerate}
+
+\subsection{Lubricar los ejes}
+
+\begin{description}[leftmargin=2.8cm,style=nextline]
+    \item[Grasa blanca de litio] Para las varillas del cabezal (rodamientos de bolas) y el husillo del eje Z. Aplique una pequeña cantidad; la impresora se lubrica sola al mover el eje en la siguiente impresión.
+    \item[Aceite 3 en 1] Para los bujes lisos de los soportes X e Y, cada 2 a 4 meses. Limpie la acumulación en las varillas y agregue unas gotas de aceite (o aceite de máquina de coser).
+\end{description}
+
+\subsection{Cuidar la superficie de impresión}
+
+Limpie la lámina PEI con un paño húmedo. Si tras 4 a 6 meses las piezas ya no se pegan, líjela con lija de grano 2000 y límpiela. Verifique que quede plana y que los imanes de la cama calcen con los de la plataforma.
+
+\subsection{Cambiar la boquilla (hotend)}
+
+\begin{enumerate}
+    \item Apague la impresora y desenchúfela.
+    \item Retire la placa magnética del extrusor para dejar expuesto el hotend y sus cables.
+    \item Con la llave allen, afloje unas vueltas (sentido antihorario) el tornillo tensor de la placa frontal de aluminio: el hotend debe poder salir.
+    \item Retire con cuidado los cables de sus alojamientos.
+    \item Coloque el hotend nuevo siguiendo los pasos al revés: empújelo hasta el fondo contra el anillo de asiento.
+    \item Mientras lo sostiene, apriete el tornillo (sentido horario) hasta que no pueda extraerlo con la mano, con el bloque calefactor paralelo al frente del extrusor para que la tapa quede plana sobre los imanes.
+    \item Encienda y pruebe.
+\end{enumerate}
+
+\begin{warningbox}
+No apriete en exceso el tornillo tensor: luego será difícil hacer mantenimiento. Realice este trabajo con el hotend frío.
+\end{warningbox}
+
+\section{Solución de problemas}
+
+\begin{table}[H]
+    \centering
+    \caption{Problemas frecuentes de la Robo R2.}
+    \label{tab:problemas}
+    \small
+    \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X}
+        \toprule
+        \textbf{Problema} & \textbf{Causa probable} & \textbf{Qué hacer} \\
+        \midrule
+        La pieza no se pega a la cama & Z-Offset incorrecto; PEI sucia o gastada; enfriamiento rápido & Actualizar; repetir el Z-Offset Wizard y el Fine Tune; limpiar o lijar la PEI; usar raft; bajar el ventilador al 30\,\%; primera capa de 0,3~mm y ancho de 1~mm; en ABS, sin ventilador \\
+        \midrule
+        Rechinido al iniciar o al hacer home & Varillas fuera de posición tras el transporte & Deslizar la varilla trasera izquierda a su sitio sin que roce la pared lateral \\
+        \midrule
+        No sale material & Hotend no calienta; engranaje sucio o flojo; filamento enredado & Revisar cables del hotend; limpiar el engranaje; apretar el tornillo del engranaje de arrastre; desenredar el carrete \\
+        \midrule
+        Hotend tapado & Poca temperatura; filamento atascado bajo el engranaje; ventilador del hotend desconectado & Revisar cables; calentar y extraer el filamento con las pinzas; conectar el ventilador (tercer ventilador, en la parte trasera del extrusor) \\
+        \midrule
+        Capas desplazadas o mala calidad & Poleas flojas; ejes desalineados & Apretar los tornillos de las poleas; realinear los ejes con los sujetadores naranjas en las esquinas \\
+        \midrule
+        El hotend se sale o la tapa no asienta & Tornillo tensor flojo; bloque calefactor girado & Apagar, empujar el hotend hasta el fondo y apretar el tornillo; alinear el bloque calefactor paralelo al carro \\
+        \midrule
+        Error de sensor de filamento & Filamento fuera del bloque del sensor & Hacer pasar todo el filamento por el bloque del sensor trasero (el manual describe cómo desactivar el plugin desde el panel web si persiste) \\
+        \midrule
+        La cama calienta lento o no se reconoce & Pines pogo desgastados & Retirar la cama y revisar los 6 pines dorados: todos deben rebotar al presionarlos; si no, se debe reemplazar la placa \\
+        \midrule
+        Pantalla en blanco o sin respuesta & Cableado interno flojo & Verificar con el equipo apagado los cables internos de la pantalla; si persiste, contactar al soporte \\
+        \midrule
+        Error \emph{Connection Interrupted} & No se detecta la placa electrónica & Pulsar \emph{Reset}; revisar los cables planos sobre el extrusor, los cables del hotend y el cable plano de la placa principal \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{infobox}[Actualizar el firmware]
+Descargue el firmware de la R2 desde el sitio del fabricante, descomprímalo y copie el archivo \texttt{.hex} a una USB. Insértela y vaya a \ruta{Utilities}\flecha\ruta{Options}\flecha\ruta{Firmware Update}, elija el archivo y pulse \ruta{Start}. Espere unos minutos: la impresora se reconecta sola.
+\end{infobox}
+
+\begin{warningbox}[Intervenciones internas]
+Las reparaciones que implican abrir la máquina (electrónica, pines pogo, interruptor de límite Z, puerta) están descritas en el manual del fabricante~\cite{robomanual}. Hágalas solo con la impresora apagada y desenchufada, y con autorización del docente o del responsable del laboratorio.
+\end{warningbox}

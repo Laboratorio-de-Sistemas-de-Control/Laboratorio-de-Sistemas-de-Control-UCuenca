@@ -1,0 +1,59 @@
+%=============================================================
+%  Portada  (estilo Libro de Marca UCUENCA)
+%  Los textos se definen en main.tex (\DocTitulo, \DocTema, ...)
+%=============================================================
+\pagestyle{empty}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \pagecolor{UCblue}
+  \color{white}
+
+  \begin{tikzpicture}[remember picture, overlay]
+    % Franja roja superior
+    \fill[UCred] ([yshift=-3.8cm]current page.north west)
+      rectangle ([yshift=-4.2cm]current page.north east);
+    % Franja roja inferior
+    \fill[UCred] ([yshift=3.6cm]current page.south west)
+      rectangle ([yshift=3.2cm]current page.south east);
+  \end{tikzpicture}
+
+  % Cabecera UCUENCA
+  \vspace*{0.9cm}
+  \begin{flushleft}
+    {\fontsize{42}{46}\selectfont\bfseries
+      \textcolor{white}{U}\textcolor{white}{CUENCA}}\\[-6pt]
+    {\color{UCred}\rule{0.52\linewidth}{3pt}}\\[4pt]
+    {\small\bfseries\color{white!80!UCblue}\MakeUppercase{Ingeniería}}
+  \end{flushleft}
+
+  \vspace{3.8cm}
+
+  % Título principal
+  \begin{flushleft}
+    {\fontsize{38}{44}\selectfont\bfseries\color{white}%
+      \DocTitulo}\\[10pt]
+    {\fontsize{22}{26}\selectfont\bfseries\color{white!85!UCblue}%
+      \DocTema}\\[6pt]
+    {\small\color{white!60!UCblue}\DocSubtitulo}
+  \end{flushleft}
+
+  \vfill
+
+  % Autor
+  \begin{flushleft}
+    {\color{UCred}\rule{0.4\linewidth}{1pt}}\\[8pt]
+    {\normalsize\bfseries\color{white}%
+      \DocAutor}\\[4pt]
+    {\small\color{white!70!UCblue}%
+      \DocDepartamento}\\[16pt]
+    {\footnotesize\color{white!50!UCblue}%
+      \DocLugarAnio}
+  \end{flushleft}
+
+  \vspace{0.6cm}
+\end{titlepage}
+
+% Restaurar color de página
+\pagecolor{white}\color{black}
+\pagestyle{fancy}

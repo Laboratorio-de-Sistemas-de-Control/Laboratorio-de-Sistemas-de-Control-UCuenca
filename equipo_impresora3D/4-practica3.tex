@@ -1,0 +1,94 @@
+\chapter{Práctica 3: Control Remoto (Panel Web, App y Cámara)}
+
+\begin{center}
+  \small\renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{l l l l}
+    \textbf{Equipo:}      & Robo R2   &
+    \textbf{Actividades:} & 3 \\
+    \textbf{Software:}    & Panel web y app Robo (iOS) &
+    \textbf{Duración:}    & 1 hora \\
+  \end{tabular}
+\end{center}
+
+\section{Introducción}
+
+La R2 puede controlarse sin tocar su pantalla: desde un navegador (panel web) o desde la app Robo para iOS. Esto permite subir archivos, laminar, fijar temperaturas, mover los ejes y ver el interior de la impresora con su cámara integrada. Para todo ello la impresora debe estar conectada a la misma red o en modo hotspot.
+
+\begin{objetivebox}
+\begin{itemize}
+    \item Conectarse al panel web de la impresora.
+    \item Subir y laminar archivos desde el panel.
+    \item Encender y usar la cámara integrada.
+    \item Agregar la impresora a la app Robo.
+\end{itemize}
+\end{objetivebox}
+
+\vspace{6pt}
+
+\begin{materialbox}
+\begin{itemize}
+    \item Robo R2 conectada a Wi-Fi y actualizada.
+    \item Computador con navegador (Chrome o Firefox) y, opcionalmente, un dispositivo iOS con la app.
+\end{itemize}
+\end{materialbox}
+
+\newpage
+\section{Actividad 1: Conectarse al panel web}
+
+Hay tres formas de abrir el panel desde un navegador:
+
+\begin{enumerate}
+    \item \textbf{Por dirección IP:} en la impresora vaya a \ruta{Utilities}\flecha\ruta{Network}\flecha\ruta{Network Status}, anote la dirección IP y escríbala en la barra del navegador. También funciona desde el navegador de un teléfono.
+    \item \textbf{Por nombre (Bonjour):} el nombre de la impresora (por ejemplo, \texttt{plastic-gordon}) está en la parte trasera del equipo y en \emph{Network Status}. Escriba \texttt{plastic-gordon.local/}. En Windows hay que instalar antes Bonjour.
+    \item \textbf{Por modo hotspot:} \ruta{Utilities}\flecha\ruta{Network}\flecha\ruta{Start Hotspot Mode}, conecte el computador a la red Wi-Fi que emite la impresora y abra la dirección IP que muestra \emph{Network Status}.
+\end{enumerate}
+
+\begin{infobox}[Clave del hotspot]
+La clave de la red hotspot de la impresora es igual a su nombre de serie (por ejemplo, \texttt{careful-curie}).
+\end{infobox}
+
+\section{Actividad 2: Subir archivos y controlar}
+
+\begin{itemize}
+    \item \textbf{Subir un \texttt{.gcode}:} con el botón \ruta{Upload} de la lista de archivos o arrastrando el archivo al panel.
+    \item \textbf{Subir un \texttt{.stl}:} al subirlo aparece una ventana para laminarlo directamente en la impresora, eligiendo el perfil \emph{Low}, \emph{Medium}, \emph{High} o \emph{Ultra High}, con o sin raft. Después puede iniciar la impresión o no hacer nada.
+    \item \textbf{Temperaturas:} en la sección \emph{Temperature} fije la temperatura de boquilla y cama.
+    \item \textbf{Movimiento:} en \emph{Control} mueva los ejes y extruda o retraiga filamento. Caliente la boquilla antes de usar \emph{extrude} y \emph{retract}.
+\end{itemize}
+
+\newpage
+\section{Actividad 3: Cámara y app Robo}
+
+\subsection*{Cámara integrada (solo R2)}
+
+La cámara viene \textbf{apagada} por defecto para no consumir ancho de banda. Actualice la impresora antes de usarla. Hay varias formas de encenderla:
+
+\begin{itemize}
+    \item \textbf{Pantalla táctil:} \ruta{Utilities}\flecha\ruta{Options}\flecha\ruta{Webcam}.
+    \item \textbf{Panel web:} menú \ruta{System} (arriba a la derecha)\flecha\ruta{Start Webcam}, y actualice la página del navegador.
+    \item \textbf{App Robo (versión beta):} seleccione la impresora, toque \ruta{Video} (abajo a la derecha) y active el interruptor.
+\end{itemize}
+
+En la sección \emph{Webcam} del panel verá una transmisión en vivo del interior; sirve para vigilar la pieza y confirmar que la cama está libre antes de otra impresión. El panel también permite configurar un \emph{timelapse} (en \emph{Timelapse Configuration}).
+
+\subsection*{App Robo en iOS}
+
+\begin{enumerate}
+    \item Descargue la app \textbf{Robo} desde el App Store.
+    \item Conecte el dispositivo a la misma red Wi-Fi que la impresora (o al hotspot).
+    \item En \emph{Dashboard} toque \ruta{+Add a Printer}\flecha\ruta{Scan for Printer Name/IP} y elija su impresora (el nombre está en la parte trasera).
+    \item En la impresora abra \ruta{Utilities}\flecha\ruta{Network}\flecha\ruta{API or QR Code}.
+    \item En la app toque \ruta{Scan Printer Barcode for Key}, apunte la cámara al código y luego \ruta{Add Printer}.
+\end{enumerate}
+
+Una misma app puede administrar varias impresoras de forma independiente.
+
+\section{Entregables}
+
+\begin{entregabox}
+\begin{itemize}
+    \item Captura del panel web conectado a la impresora (con la dirección usada).
+    \item Captura de la transmisión de la cámara durante una impresión.
+    \item Indique qué método de conexión usó y por qué.
+\end{itemize}
+\end{entregabox}
