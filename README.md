@@ -7,7 +7,7 @@ Información pública del **Laboratorio de Sistemas de Control** de la Universid
 | Carpeta | Contenido |
 |---|---|
 | [`equipos/`](equipos/) | Guía de cada equipo: qué es, sus datos, seguridad, y los manuales en PDF. |
-| [`normas/`](normas/README.md) | Normas de trabajo, normas de seguridad y protocolo de emergencia (en preparación). |
+| [`normas/`](normas/README.md) | Carteles con las normas del laboratorio y el procedimiento de emergencia. |
 | [`solicitudes/`](solicitudes/README.md) | Formularios (Acta de entrega de bienes) y cómo solicitar un bien. |
 
 ## Equipos disponibles
@@ -19,6 +19,7 @@ Información pública del **Laboratorio de Sistemas de Control** de la Universid
 | **Sistema Multitanque** | Identificación y control de nivel y caudal de un líquido (banco real, experimentos remotos y simulador) | [equipo-multitanque](equipos/equipo-multitanque/README.md) |
 | **Tableros de control** (Controllino Mega y ESP32 PLC 14) | Prácticas de automatización con PLC y HMI | [equipo-tableros-control](equipos/equipo-tableros-control/README.md) |
 | **QUBE-Servo 3** (Quanser) | Control de motor DC, posición y péndulo invertido | [equipo-qube-servo3](equipos/equipo-qube-servo3/README.md) |
+| **Entrenador de Planta de Control (EPC)** (DataLights) | Prácticas de instrumentación y control con LabVIEW: temperatura, velocidad, posición, sonido y relé | [equipo-epc](equipos/equipo-epc/README.md) |
 | **Robot LEGO MINDSTORMS EV3** | Introducción a la robótica y a la programación | [equipo-lego-ev3](equipos/equipo-lego-ev3/README.md) |
 | **Exoesqueleto ALLEX-2** | Investigación (tesis de maestría). **Uso restringido: no disponible para estudiantes** | [equipo-exoesqueleto](equipos/equipo-exoesqueleto/README.md) |
 
