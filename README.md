@@ -12,6 +12,11 @@ en PDF.
 |---|---|---|
 | **Impresora 3D Robo R2** (Robo 3D) | Fabricar piezas, carcasas y prototipos en plástico (FDM) | [equipo-impresoras-3d](equipo-impresoras-3d/README.md) |
 | **Fresadora de PCB Prometheus** (Zippy Robotics) | Fabricar placas de circuito impreso: fresado de pistas, taladrado y corte del contorno | [equipo-cnc](equipo-cnc/README.md) |
+| **Sistema Multitanque** | Identificación y control de nivel y caudal de un líquido (banco real, experimentos remotos y simulador) | [equipo-multitanque](equipo-multitanque/README.md) |
+| **Tableros de control** (Controllino Mega y ESP32 PLC 14) | Prácticas de automatización con PLC y HMI | [equipo-tableros-control](equipo-tableros-control/README.md) |
+| **QUBE-Servo 3** (Quanser) | Control de motor DC, posición y péndulo invertido | [equipo-qube-servo3](equipo-qube-servo3/README.md) |
+| **Robot LEGO MINDSTORMS EV3** | Introducción a la robótica y a la programación | [equipo-lego-ev3](equipo-lego-ev3/README.md) |
+| **Exoesqueleto ALLEX-2** | Investigación (tesis de maestría). **Uso restringido: no disponible para estudiantes** | [equipo-exoesqueleto](equipo-exoesqueleto/README.md) |
 
 ## Cómo está organizado
 
