@@ -11,6 +11,7 @@ en PDF.
 | Equipo | Para qué sirve | Carpeta |
 |---|---|---|
 | **Fresadora de PCB Prometheus** (Zippy Robotics) | Fabricar placas de circuito impreso: fresado de pistas, taladrado y corte del contorno | [equipo-cnc](equipo-cnc/README.md) |
+| **Impresoras 3D** ⚠️ por confirmar (marca y modelo) | Fabricar piezas y prototipos en plástico por deposición de material fundido (FDM) | [equipo-impresoras-3d](equipo-impresoras-3d/README.md) |
 
 ## Cómo está organizado
 
