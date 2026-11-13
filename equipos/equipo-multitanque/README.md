@@ -24,6 +24,7 @@ La guía de la práctica con el sistema multitanque está en el repositorio púb
 
 | Característica | Valor |
 |---|---|
+| Cantidad en el laboratorio | 1 |
 | Proceso | Dos tanques en cascada y un tanque de bombeo |
 | Bomba | Favson F3012, 12 V, 4 L/min |
 | Sensores | Ultrasónico HC-SR04 (nivel) y sensor de flujo (caudal) |

@@ -14,6 +14,7 @@ El **ALLEX-2** es un exoesqueleto de extremidades inferiores para uso en el labo
 
 | Característica | Valor |
 |---|---|
+| Cantidad en el laboratorio | 1 |
 | Motores | Maxon sin escobillas (EC 90 flat en la cadera y EC 45 flat en rodilla y tobillo) con reductores armónicos |
 | Drivers | Maxon EPOS4, uno por articulación, por bus CAN a 500 kbps |
 | Control | Raspberry Pi de control y Raspberry Pi 4 con pantalla táctil (interfaz ExoHMI) |

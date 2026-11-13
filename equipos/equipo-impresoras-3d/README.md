@@ -22,6 +22,7 @@ Ordenados por prioridad: léelos en este orden.
 
 | Característica | Valor |
 |---|---|
+| Cantidad en el laboratorio | 2 impresoras |
 | Tipo | Impresora 3D FDM de escritorio |
 | Fabricante / modelo | Robo 3D / Robo R2 |
 | Control | Pantalla táctil a color (RoboOS) con tres pestañas: *Files*, *Printer* y *Utilities* |
@@ -34,7 +35,7 @@ Ordenados por prioridad: léelos en este orden.
 | Superficie de impresión | Lámina PEI magnética y removible |
 | Filamento | PLA y ABS |
 
-⚠️ **Por confirmar** (no consta en los manuales): cantidad de impresoras, número de serie, número de inventario, ubicación en el laboratorio,
+⚠️ **Por confirmar** (no consta en los manuales): número de serie, número de inventario, ubicación en el laboratorio,
 volumen de impresión y persona responsable del equipo.
 
 ### Temperaturas de referencia

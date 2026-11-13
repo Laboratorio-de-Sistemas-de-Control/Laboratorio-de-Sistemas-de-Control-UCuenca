@@ -18,6 +18,7 @@ Las prácticas (1, 2, 4 y 5) y su manual en PDF están en el repositorio públic
 
 | Característica | Valor |
 |---|---|
+| Cantidad en el laboratorio | 2 equipos |
 | Fabricante / modelo | Quanser / Qube-Servo 3 |
 | Motor | DC de accionamiento directo, 24 V |
 | Encoders | 2048 cuentas por vuelta en cuadratura (motor y péndulo) |
@@ -25,7 +26,7 @@ Las prácticas (1, 2, 4 y 5) y su manual en PDF están en el repositorio públic
 | Interfaz | USB |
 | Software | MATLAB/Simulink con QUARC; interfaces de Quanser para Python y C/C++ |
 
-⚠️ **Por confirmar:** cantidad de equipos, ubicación en el laboratorio y persona responsable.
+⚠️ **Por confirmar:** ubicación en el laboratorio y persona responsable.
 
 ## Seguridad
 

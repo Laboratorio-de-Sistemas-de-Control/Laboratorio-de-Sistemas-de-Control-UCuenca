@@ -23,6 +23,7 @@ Ordenados por prioridad: léelos en este orden.
 
 | Característica | Valor |
 |---|---|
+| Cantidad en el laboratorio | 1 |
 | Tipo | Fresadora de PCB de escritorio (fresado, taladrado y corte de contorno) |
 | Fabricante / modelo | Zippy Robotics / Prometheus |
 | Área máxima de trabajo | 6" × 4" (160 mm × 100 mm, formato Eurocard) |
