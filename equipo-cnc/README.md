@@ -11,14 +11,13 @@ mecaniza piezas ni moldes.
 
 ## Documentos en este repositorio
 
-| Documento | Para qué sirve |
-|---|---|
 Ordenados por prioridad: léelos en este orden.
 
 | Prioridad | Documento | Para qué sirve |
 |---|---|---|
-| 1 | [01_Manual_Prometheus_ZippyRobotics.pdf](Docs/01_Manual_Prometheus_ZippyRobotics.pdf) | Manual y tutorial paso a paso para hacer una placa de ejemplo (en inglés, edición de noviembre de 2021; la versión vigente está en la página oficial). **Obligatorio antes de operar la máquina.** |
-| 2 | [02_Tarjeta_de_calibracion.pdf](Docs/02_Tarjeta_de_calibracion.pdf) | Tarjeta de calibración, para imprimir. Solo hace falta si las placas salen con los ángulos torcidos (ver el apéndice del manual). |
+| 1 | [01_Manual_de_uso_Prometheus.pdf](Docs/01_Manual_de_uso_Prometheus.pdf) | Manual de uso del laboratorio (en español, 26 páginas): seguridad, puesta en marcha, brocas y palpado, fabricación de una placa de ejemplo, archivos Gerber, mantenimiento y problemas frecuentes. **Empieza por aquí.** |
+| 2 | [02_Manual_Prometheus_ZippyRobotics.pdf](Docs/02_Manual_Prometheus_ZippyRobotics.pdf) | Manual oficial del fabricante (en inglés, edición de noviembre de 2021; la versión vigente está en la página oficial). |
+| 3 | [03_Tarjeta_de_calibracion.pdf](Docs/03_Tarjeta_de_calibracion.pdf) | Tarjeta de calibración, para imprimir. Solo hace falta si las placas salen con los ángulos torcidos (ver el capítulo de mantenimiento del manual de uso). |
 
 ## Datos de la máquina
 
